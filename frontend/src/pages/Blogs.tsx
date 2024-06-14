@@ -13,6 +13,7 @@ export const Blogs = () => {
 
 
     return <div>
+        <Navbar/>
         <div className="flex justify-center">
             <div className="w-full">
                 {blogs.length>0 && blogs.map(blog => <BlogCard 

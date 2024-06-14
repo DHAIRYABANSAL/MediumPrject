@@ -19,6 +19,7 @@ export const FullBlog = () => {
             </div>
     }
     return <div>
+        <Navbar/>
         <BlogCom blog={blog}/>
     </div>
 }

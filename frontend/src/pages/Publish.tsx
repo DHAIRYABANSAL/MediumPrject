@@ -2,6 +2,7 @@ import { useState } from "react"
 import { BACKEND_URL } from "../config"
 import { useNavigate } from "react-router-dom"
 import axios from "axios"
+import { Navbar } from "../components/Navbar"
 
 export const Publish = () => {
 
@@ -23,7 +24,9 @@ export const Publish = () => {
             }
         })
     }
-    return <div className="w-full ml-5 mt-5">
+    return <div>
+        <Navbar/>
+        <div className="w-full ml-5 mt-5">
         <div className="flex justify-center">
             <div className="w-7/12">
                 <input onChange={(e) => setTitle(e.target.value)} type="text" className="bg-gray-100 border border-gray-600 text-slate-900 text-sm rounded-lg  w-full p-2.5 d" placeholder="Title" required />
@@ -47,5 +50,6 @@ export const Publish = () => {
 
 
 
+    </div>
     </div>
 }

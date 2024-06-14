@@ -29,7 +29,7 @@ export const Auth = ({type} : {type: "signup" | "signin"}) => {
             localStorage.setItem("token",jwt)
             navigate("/blogs")
         }catch(e){
-            alert(e.message)
+            alert(e)
         }
     }
 
